@@ -8,7 +8,7 @@ const app = express()
 app.use(logger('dev'))
 app.use(express.json())
 
-app.use('/api/recipes', recipeRouter)
+app.use('/api', recipeRouter)
 
 
 module.exports = app
